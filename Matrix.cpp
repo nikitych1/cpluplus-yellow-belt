@@ -168,10 +168,36 @@ private:
 
 int main()
 {
-    Matrix one, two;
-    std::cin >> one >> two;
 
-    std::cout << one + two << std::endl;
+    std::vector<int> v = {1, 2, 3, 4, 5};
+    int n = 2, m = 1;
+
+//    Matrix one, two;
+//    std::cin >> one >> two;
+//
+//    std::cout << one + two << std::endl;
+
+    for (size_t i = n; i + m < v.size(); ++i)
+        std::cout << v[i] << " ";
+
+    std::cout << std::endl;
+
+    for (size_t k = v.size(); k > 0; --k)
+    {
+        size_t i = k - 1;
+        std::cout << v[i] << " ";
+    }
+
+    std::cout << std::endl;
+
+
+    for (size_t k = v.size(); k > n + m; --k) {
+        size_t i = k - m - 1;
+        std::cout << v[i] << " ";
+    }
+
+    int32_t x = 1u;
+    uint32_t xx = -1;
 
     return 0;
 }
