@@ -20,5 +20,10 @@ int main()
 
     std::cout << mass << std::endl;
 
+    std::vector<int> one {2017, 6, 8}, two {2017, 1, 26};
+
+    std::cout << (std::vector<int> qw {2017, 6, 8} < std::vector<int> twon {2017, 1, 26});
+
+
     return 0;
 }
